@@ -1,0 +1,157 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: 0;
+}
+
+.navbar div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .btn {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.navbar .btn:hover {
+    background-color: #1e7e34;
+}
+
+.navbar .logout {
+    background-color: #dc3545;
+}
+
+.navbar .logout:hover {
+    background-color: #c82333;
+}
+
+/* Checkout Container */
+.checkout-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Order Summary */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+ul li img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+ul li form {
+    display: flex;
+    gap: 10px;
+}
+
+ul li input[type="number"] {
+    width: 50px;
+    padding: 5px;
+}
+
+.btn-remove {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.btn-remove:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar div {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .checkout-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+}
